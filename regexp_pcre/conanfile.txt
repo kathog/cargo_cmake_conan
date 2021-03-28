@@ -1,0 +1,10 @@
+[requires]
+jsoncpp/1.9.4
+pcre/8.44
+glog/0.4.0
+
+[generators]
+cmake
+
+[options]
+pcre:with_jit=True
