@@ -31,7 +31,7 @@ fn main() {
         .opt_level_str("fast")
         .flag("-std=c++20")
         .compiler("clang++")
-        .compile("cxx-test");
+        .compile("cargo-cmake-conan");
 
     println!("cargo:rustc-link-search=native={}", dst.display());
     println!("cargo:rustc-link-lib=regexp_pcre_lib");
