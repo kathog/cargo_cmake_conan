@@ -9,7 +9,7 @@ fn main() {
     let command = InstallCommandBuilder::new()
         .with_profile(&conan_profile)
         .build_policy(BuildPolicy::Missing)
-        .recipe_path(Path::new("../../cpp/regexp_pcre/conanfile.txt"))
+        .recipe_path(Path::new("regexp_pcre/conanfile.txt"))
         .build();
 
     let build_info = command.generate().unwrap();
